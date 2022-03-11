@@ -17,6 +17,7 @@ spec:
       containers:
         - name: backend-feed
           image: censodev/udagram-api-feed:v1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
